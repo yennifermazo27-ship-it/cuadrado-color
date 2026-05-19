@@ -1,3 +1,7 @@
 <div class="contenedor">
-    <div class="cuadro"></div>
+  <div class="cuadro" [style.background-color]="color"></div>
+  <div class="botones">
+    <ng-content></ng-content>
+  </div>
+  <span class="nombre-color">{{ nombreColor }}</span>
 </div>

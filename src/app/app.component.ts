@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Cuadrocolor';
+  title = 'cuadroColor';
+  colorActual: string = 'white';
+  nombreColor: string = 'Blanco';
+
+  cambiarColor(color: string) {
+    this.colorActual = color;
+    this.nombreColor = color
+  }
 }

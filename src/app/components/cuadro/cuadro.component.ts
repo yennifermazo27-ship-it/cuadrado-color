@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cuadro',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './cuadro.component.css'
 })
 export class CuadroComponent {
-
+  @Input() color: string = 'white';
+  @Input() nombreColor: string = 'Blanco';
 }

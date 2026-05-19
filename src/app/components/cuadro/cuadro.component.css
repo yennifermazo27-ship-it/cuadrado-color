@@ -1,16 +1,30 @@
 .contenedor {
+  width: 560px;
+  background-color: #ff4d8d;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color:#ff4d8d ;
-  height: 600px;
-  width: 600px;
-  border-radius: 10px;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
 }
 
 .cuadro {
-  background-color: white;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.nombre-color {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
 }

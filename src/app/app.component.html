@@ -1,2 +1,8 @@
 <h1>Cambio de color</h1>
-<app-cuadro><app-cuadro/>
+
+<app-cuadro [color]="colorActual" [nombreColor]="nombreColor">
+  <app-boton etiqueta="Rojo"     color="red"    nombre="Rojo"     (colorSeleccionado)="cambiarColor($event)" (nombreSeleccionado)="nombreColor=$event"></app-boton>
+  <app-boton etiqueta="Azul"     color="blue"   nombre="Azul"     (colorSeleccionado)="cambiarColor($event)" (nombreSeleccionado)="nombreColor=$event"></app-boton>
+  <app-boton etiqueta="Verde"    color="green"  nombre="Verde"    (colorSeleccionado)="cambiarColor($event)" (nombreSeleccionado)="nombreColor=$event"></app-boton>
+  <app-boton etiqueta="Amarillo" color="yellow" nombre="Amarillo" (colorSeleccionado)="cambiarColor($event)" (nombreSeleccionado)="nombreColor=$event"></app-boton>
+</app-cuadro>
